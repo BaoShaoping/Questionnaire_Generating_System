@@ -1,12 +1,1 @@
-# packages.txt – Streamlit Cloud system-level apt packages
-# ──────────────────────────────────────────────────────────────
-# pyzbar is a Python wrapper around the *libzbar* shared library.
-# On Linux (Debian/Ubuntu) the library must be installed separately;
-# pip alone cannot provide it.
-#
-# Streamlit Cloud reads this file and runs:
-#   apt-get install -y <package>
-# before starting the app.
-# ──────────────────────────────────────────────────────────────
-
 libzbar0
