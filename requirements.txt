@@ -1,0 +1,26 @@
+# ─────────────────────────────────────────────────────────────
+# requirements.txt  –  AI Survey QR Audit Tool
+# Compatible with Streamlit Cloud (Linux / Python 3.10+)
+# ─────────────────────────────────────────────────────────────
+
+# ── Web framework ─────────────────────────────────────────────
+streamlit>=1.35.0
+
+# ── QR / barcode decoding ─────────────────────────────────────
+# pyzbar wraps the libzbar C library.
+# On Streamlit Cloud (Debian/Ubuntu) the shared library is available
+# via the packages.txt file (see below). pyzbar itself is pure Python.
+pyzbar>=0.1.9
+
+# ── Computer vision (for image pre-processing) ────────────────
+# Use the headless build – no Qt/GUI dependencies needed on a server.
+opencv-python-headless>=4.9.0.80
+
+# ── Image handling ────────────────────────────────────────────
+Pillow>=10.3.0
+
+# ── HTTP requests (Jina AI Reader scraping) ───────────────────
+requests>=2.31.0
+
+# ── Standard-library deps already present in CPython 3.10+ ───
+# re, io, base64, textwrap, datetime  →  no install needed
