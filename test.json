@@ -1,0 +1,115 @@
+{
+  "questions": [
+    {
+      "question_id": "Q1",
+      "question_text": "您的性别:",
+      "question_type": "single_choice",
+      "options": [
+        "男",
+        "女"
+      ],
+      "is_required": true
+    },
+    {
+      "question_id": "Q2",
+      "question_text": "您的年龄:",
+      "question_type": "single_choice",
+      "options": [
+        "18岁及以下",
+        "19-25岁",
+        "26-45岁",
+        "46-60岁",
+        "60岁以上"
+      ],
+      "is_required": true
+    },
+    {
+      "question_id": "Q3",
+      "question_text": "您的最高受教育程度:",
+      "question_type": "single_choice",
+      "options": [
+        "初中及以下",
+        "高中/中专/技校",
+        "大学专科",
+        "大学本科",
+        "硕士研究生及以上"
+      ],
+      "is_required": true
+    },
+    {
+      "question_id": "Q4",
+      "question_text": "您家庭的常住人口数:",
+      "question_type": "single_choice",
+      "options": [
+        "1人",
+        "2人",
+        "3人",
+        "4人",
+        "5人及以上"
+      ],
+      "is_required": true
+    },
+    {
+      "question_id": "Q5",
+      "question_text": "您家庭的月均用电量大致为?",
+      "question_type": "single_choice",
+      "options": [
+        "100度及以下",
+        "101-200度",
+        "201-300度",
+        "301-400度",
+        "401度及以上"
+      ],
+      "is_required": true
+    },
+    {
+      "question_id": "Q6",
+      "question_text": "您家庭中长期处于待机（不拔插头）的电子设备有哪些?【多选题】",
+      "question_type": "multiple_choice",
+      "options": [
+        "机顶盒",
+        "路由器",
+        "电视",
+        "手机/平板充电器",
+        "台式电脑/笔记本",
+        "空调",
+        "洗衣机",
+        "其他"
+      ],
+      "is_required": true
+    },
+    {
+      "question_id": "Q7",
+      "question_text": "请根据您的实际情况，对下述表格进行打分:（1＝非常不同意，2＝不同意，3＝一般，4＝同意，5＝非常同意）",
+      "question_type": "matrix",
+      "options": [
+        "非常不同意",
+        "不同意",
+        "一般",
+        "同意",
+        "非常同意"
+      ],
+      "is_required": true
+    },
+    {
+      "question_id": "Q8",
+      "question_text": "您对减少居民电子设备待机能耗有哪些建议?",
+      "question_type": "open_text",
+      "options": [],
+      "is_required": true
+    },
+    {
+      "question_id": "Q9",
+      "question_text": "您希望通过哪些方式了解待机节电的相关知识?【多选题】",
+      "question_type": "multiple_choice",
+      "options": [
+        "社区宣传",
+        "短视频/ 社交媒体",
+        "学校科普",
+        "家电产品提示",
+        "其他"
+      ],
+      "is_required": true
+    }
+  ]
+}
