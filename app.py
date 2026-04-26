@@ -37,7 +37,7 @@ from PIL import Image
 
 # PAGE CONFIG  (must be the very first st call)
 st.set_page_config(
-    page_title="AI问卷二维码诊断",
+    page_title="AI问卷诊断",
     page_icon="Q",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -885,6 +885,11 @@ Rules:
 - Output ONLY the JSON object. No explanation outside the JSON.
 - In natural-language Chinese text fields, do not use double quotes inside strings.
   Use Chinese quotation marks or no quotes instead.
+- Unescaped double quotes (") are forbidden inside all JSON strings.
+Wrong example: "He said" hello ""
+Correct example: "He says \\" Hello \\""
+If you need a quotation, use the Chinese quotation mark "" or" "or single quotation mark instead, for example:
+Correct demonstration: "He said 「你好」"
 """.strip()
 
 
