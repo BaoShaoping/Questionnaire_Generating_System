@@ -12,7 +12,7 @@ def _llm_convert(markdown_text: str) -> list[dict]:
     │  Uncomment and configure when you have an API key.                       │
     │                                                                          │
     │  The prompt instructs the model to output ONLY a JSON array matching     │
-    │  our schema.  No preamble, no markdown fences.                           │
+    │  our schema.  No preamble, no markdown.txt fences.                           │
     └──────────────────────────────────────────────────────────────────────────┘
     """
     # ── Option A: OpenAI ─────────────────────────────────────────────────────
@@ -39,7 +39,7 @@ def _llm_convert(markdown_text: str) -> list[dict]:
     #     messages=[{"role": "user", "content": markdown_text[:12000]}],
     # )
     # raw_json = msg.content[0].text
-    # # Strip accidental markdown fences the model might add
+    # # Strip accidental markdown.txt fences the model might add
     # raw_json = re.sub(r'^```json\s*|\s*```$', '', raw_json.strip())
     # return json.loads(raw_json).get("questions", [])
 
@@ -109,7 +109,7 @@ Allowed question_type values (use exactly these strings):
   open_text       – long free-text / essay box
 
 Rules:
-- Output ONLY the JSON object. No preamble, no markdown fences, no explanation.
+- Output ONLY the JSON object. No preamble, no markdown.txt fences, no explanation.
 - If a question's type is ambiguous, choose the closest match.
 - Ignore navigation text, progress bars, page titles, and form submit buttons.
 - Preserve the original question wording exactly.
